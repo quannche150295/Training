@@ -1,4 +1,19 @@
 <p>This is home component</p>
-<div *ngFor="let student of students">
-    <p>{{student.name}},{{student.home}}</p><br>
-</div>
+<table>
+    <tr>
+        <th>City</th>
+        <th>Temperature</th>
+    </tr>
+    <tr *ngFor="let city of cities">
+        <td>{{city.name}}</td>
+        <td>
+            <div *ngIf="city.temp >= 0">
+                <p>{{city.temp}}</p>
+            </div>
+            <div *ngIf="city.temp < 0">
+                <p class="negative">{{city.temp}}</p>
+            </div>
+        </td>
+    </tr>
+</table>
+
