@@ -6,14 +6,7 @@
     </tr>
     <tr *ngFor="let city of cities">
         <td>{{city.name}}</td>
-        <td>
-            <div *ngIf="city.temp >= 0">
-                <p>{{city.temp}}</p>
-            </div>
-            <div *ngIf="city.temp < 0">
-                <p class="negative">{{city.temp}}</p>
-            </div>
-        </td>
+        <div [ngClass]="{'negative': city.temp < 0}"><td>{{city.temp}}</td></div>
     </tr>
 </table>
 
