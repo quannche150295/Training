@@ -1,12 +1,3 @@
 <p>This is home component</p>
-<table>
-    <tr>
-        <th>City</th>
-        <th>Temperature</th>
-    </tr>
-    <tr *ngFor="let city of cities">
-        <td>{{city.name}}</td>
-        <div [ngClass]="{'negative': city.temp < 0}"><td>{{city.temp}}</td></div>
-    </tr>
-</table>
-
+<input type="text" [(ngModel)]="name">
+<p>Xin chao {{name}}</p>

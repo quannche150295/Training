@@ -6,22 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  public cities = [
-    {
-      name: "Hanoi",
-      temp: 20
-    },
-    {
-      name: "New York",
-      temp: -5
-    },
-    {
-      name: "Paris",
-      temp: -1
-    },
-    {
-      name: "Bangkok",
-      temp: 30
-    }
-  ]
+  public name = "Quan";
 }
